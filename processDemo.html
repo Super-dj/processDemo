@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>processDemo</title>
+    <style rel="stylesheet">
+        .container {
+
+        }
+
+        .container .title {
+
+        }
+
+        .processBox {
+            position: relative;
+            width: 500px;
+            height: 10px;
+            margin-top: 10px;
+        }
+
+        .processBox > div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 10px;
+        }
+
+        .processBox > .bg {
+            width: 100%;
+            background: #000;
+        }
+
+        .process {
+            width: 30%;
+            background: #f00;
+        }
+
+        .btnG {
+            display: inline-flex;
+            margin-top: 20px;
+        }
+
+        .btnG > div {
+            line-height: 50px;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #666666;
+        }
+
+        .blue {
+            background: blue;
+        }
+
+        .yellow {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="container">
+        <div class="title">进度条</div>
+        <div class="processBox">
+            <div class="bg"></div>
+            <div class="process"></div>
+        </div>
+        <div class="processBox">
+            <div class="bg"></div>
+            <div class="process blue"></div>
+        </div>
+        <div class="processBox">
+            <div class="bg"></div>
+            <div class="process yellow"></div>
+        </div>
+        <div class="btnG">
+            <div class="cut">-</div>
+            <div class="add">+</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+  let changeProcess = function (event, value) {
+    for (let key in event) {
+      if (key.length < 2)
+        event[key].style.width = value + "%";
+    }
+  };
+  window.onload = function () {
+    let addBtn = document.getElementsByClassName("add")[0];
+    let cutBtn = document.getElementsByClassName("cut")[0];
+    let process = document.getElementsByClassName("process");
+    let processNum = 30;
+    addBtn.onclick = function () {
+      if (processNum >= 100) return;
+      processNum += 10;
+      changeProcess(process,processNum)
+
+    };
+    cutBtn.onclick = function () {
+      if (processNum <= 0) return;
+      processNum -= 10;
+      changeProcess(process,processNum)
+    }
+  }
+</script>
