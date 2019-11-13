@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bootstrap3/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .outter{
+            margin: 20px auto;
+            width: 80%;
+            height: 600px;
+            border: 1px solid gray;
+        }
+        .outter1{
+            width: 65%;
+            height: 300px;
+            margin: 100px 100px;
+            /*border: 1px solid palegreen;*/
+        }
+        .inner{
+            width: 100%;
+            height: 50px;
+        }
+        .inner1{
+            width: 85%;
+            height: 15px;
+            border-radius: 10px;
+            background-color: lightgrey;
+            margin-top: 35px;
+            position: relative;
+            display: inline-block;
+        }
+        .inner2{
+            height: 15px;
+            background-color: cadetblue;
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            transition: 0.6s ease;
+        }
+        .btn{
+            width: 60px;
+            height: 40px;
+            margin-top: 40px;
+            font-size: 20px;
+            border: 1px solid #5bc0de;
+        }
+        span{
+            width: 10%;
+            float: right;
+            margin-top: 25px;
+            font-size: 20px;
+            color: #5e5e5e;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outter">
+        <div class="outter1">
+            <div class="inner">
+                <div class="inner1">
+                    <div class="inner2" style="width: 0%"></div>
+                </div>
+                <span>0</span>
+            </div>
+
+            <div class="inner ">
+                <div class="inner1">
+                    <div class="inner2" style="width: 0%"></div>
+                </div>
+                <span>0</span>
+            </div>
+
+            <div class="inner ">
+                <div class="inner1">
+                    <div class="inner2" style="width: 0%"></div>
+                </div>
+                <span>0</span>
+            </div>
+
+
+            <input type="button" class="btn" id="btn1" value="+">
+            <input type="button" class="btn" id="btn2" value="-">
+        </div>
+    </div>
+<script>
+    var btn1=document.getElementById('btn1');
+    btn1.onclick =function(){
+        for(var i=0;i<3;i++){
+            var inner2=document.getElementsByClassName('inner2')[i];
+            var width=inner2.style.width;
+            if(width==='0%'){
+                var width1=width.substring(0,1)
+            }else{
+                width1=width.substring(0,2)
+            }
+            var width2=Number(width1)
+            inner2.style.width=width2+20+'%';
+
+            var span=document.getElementsByTagName('span')[i].innerText;
+            document.getElementsByTagName('span')[i].innerText=width2+20+'%';
+        }
+    }
+
+    var btn2=document.getElementById('btn2');
+    btn2.addEventListener('click',function(){
+        for(var i=0;i<3;i++){
+            var inner2=document.getElementsByClassName('inner2')[i];
+            var width=inner2.style.width;
+            var width1;
+            if(width==='100%'){
+                width1=width.substring(0,3)
+            }else{
+                width1=width.substring(0,2)
+            }
+            width2=Number(width1)
+            inner2.style.width=width2-20+'%';
+
+            var span=document.getElementsByTagName('span')[i].innerText;
+            document.getElementsByTagName('span')[i].innerText=width2-20+'%';
+        }
+    })
+
+</script>
+</body>
+</html>
