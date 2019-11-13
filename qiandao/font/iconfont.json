@@ -1,0 +1,23 @@
+{
+  "id": "1506164",
+  "name": "签到",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5925",
+      "name": "向左",
+      "font_class": "xiangzuo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3073123",
+      "name": "对勾",
+      "font_class": "duigou",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

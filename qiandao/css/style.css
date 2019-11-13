@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+}
+.header{
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+#left{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: lightgrey;
+    font-size: 16px;
+    text-align: center;
+    float: left;
+}
+.title{
+    font-size: 16px;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 42%;
+}
+.dotted{
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+.doc{
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: 1px solid black;
+    float: left;
+    background-color: black;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+.all{
+    width: 40%;
+    background-color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+}
+.he-to{
+    height: 170px;
+    position: relative;
+}
+.rig-to{
+    position: absolute;
+    right: 15px;
+    color: #fff;
+    font-size: 12px;
+    top: 15px;
+}
+.nav{
+    width: 300px;
+    height:100px;
+    color: #fff;
+    padding: 10px 10px;
+    position: absolute;
+    top: 30px;
+    left: 23%;
+}
+#nav1{
+    float: left;
+    width:100px;
+    height: 100px;
+}
+#nav2{
+    float:right;
+    width: 100px;
+    height: 100px;
+}
+.all .he-to .nav .top{
+    width: 100px;
+    font-size: 10px;
+    text-align: center;
+    float: left;
+}
+.all .he-to .nav .middle{
+    width: 100px;
+    font-size: 24px;
+    text-align: center;
+    float: left;
+    margin-top: 13px;
+    font-family: Algerian;
+}
+.all .he-to .nav .bottom{
+    width: 75px;
+    font-size: 13px;
+    text-align: center;
+    float: left;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-left: 14px;
+}
+.all .middlele{
+    width: 97%;
+    background-color: #fff;
+    border-radius: 10px;
+    height:150px;
+    margin: 0 auto;
+}
+.all .middlele .ppp{
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+.all .middlele .text{
+    width: 120px;
+    height: 17px;
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.all .middlele .btn{
+    width: 100px;
+    height: 16px;
+    font-size: 14px;
+    color: gray;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.all .middlele .btn #btn-right{
+    width: 30px;
+    height: 16px;
+    border-radius: 7px;
+    background-color: lightgray;
+    display: inline-block;
+    position: relative;
+    margin-left: 3px;
+}
+.all .middlele .btn #btn-right .ball{
+    border: 1px solid lightgray;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.all .middlele .tag,
+.all .middlele .date{
+    width: 100%;
+    float: left;
+    height: 40px;
+   margin-top: 5px;
+}
+.all .middlele .tag .iconfont{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: lightgray;
+    display: inline-block;
+
+}
+.all .middlele .tag .iconfont i{
+    color: gray;
+    font-size: 24px;
+    text-align: center;
+}
+.all .middlele .tag i{
+    width: 34px;
+    height: 35px;
+    display: inline-block;
+    color: gray;
+    text-align: center;
+    font-size: 10px;
+}
+.all .middlele .date .day{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 38px;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+}
+.all .body{
+    width: 97%;
+    background-color: #fff;
+    height: 600px;
+    border-radius: 10px;
+    margin: 15px auto;
+    position: relative;
+}
+.all .body .text{
+    width: 140px;
+    height: 17px;
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.all .body .tag{
+    width: 70%;
+    height: 50px;
+    float: left;
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.all .body .tag p{
+    font-size: 14px;
+    font-weight: 800;
+}
+.all .body .tag .outter{
+    width: 220px;
+    height: 12px;
+    background-color: lightgray;
+    border-radius: 6px;
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+}
+.all .body .tag .inner{
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color:red;
+    border-radius: 6px;
+    display: inline-block;
+}
+.all .body .tag .mark{
+    font-size:15px ;
+    color: gray;
+}
+.all .body .tag .mark i{
+    font-size: 15px;
+    color: red;
+    font-style: normal;
+}
+.all .body .tag .item{
+    width: 250px;
+    font-size: 14px;
+    color: lightgray;
+    float: left;
+    margin-top: 8px;
+}
+.all .body .tag .item i{
+    font-style: normal;
+    color: red;
+}
+.all .body a{
+    border:1px solid lightgray;
+    width: 80px;
+    height: 23px;
+    border-radius: 20px;
+    text-align: center;
+    color: red;
+    float: left;
+    margin-top: 75px;
+    text-decoration: none;
+}
+.all .footer{
+    width: 97%;
+    height: 70px;
+    text-align: center;
+}
+.all .footer .p1{
+    font-size: 14px;
+    color: #fff;
+}
+.all .footer .p1 span{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: inline-block;
+    color: #3c3c3c;
+    margin-right: 5px;
+}
+.all .footer .p2{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #fff;
+}
